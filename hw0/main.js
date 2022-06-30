@@ -20,6 +20,7 @@ Car.prototype.accelerate = function(t, a){
 Car.prototype.brake = function(){
     console.log(`Braking ...`)
     this.speed = 0;
+    return 0;
 };
 
 
