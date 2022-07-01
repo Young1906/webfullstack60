@@ -28,7 +28,7 @@ Car.prototype.brake = function(){
 bmw = new Car("BMW", "carbon fiber", 10);
 console.log(bmw.name, bmw.get_speed())
 
-bmw.accelerate(5, 2);
+bmw.accelerate();
 console.log(bmw.name, bmw.get_speed())
 
 bmw.brake();
@@ -37,7 +37,7 @@ console.log(bmw.name, bmw.get_speed())
 honda = new Car("Honda", "Something", 10);
 console.log(honda.name, bmw.get_speed())
 
-honda.accelerate(5, 2);
+honda.accelerate();
 console.log(honda.name, honda.get_speed())
 
 honda.brake();
