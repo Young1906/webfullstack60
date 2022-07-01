@@ -5,10 +5,13 @@ class Car {
     }
 
     brake(){
-        this.speed =- 5;
+        // decrease 5m/s
+        this.speed -= 5;
     }
 
+
     accelerate(){
+        // increase 10m/s
         this.speed += 10;
     }
 
@@ -18,7 +21,7 @@ class Car {
     }
 
     setSpeed(speed){
-        this.speed = speed / 3.6; 
+        this.speed = speed * 1.0 / 3.6; 
     }
 
     echo(){
@@ -30,5 +33,8 @@ class Car {
 const car = new Car("Honda", 5);
 car.echo();
 
-car.setSpeed(10);
+car.setSpeed(35);
+car.echo();
+
+car.brake();
 car.echo();
