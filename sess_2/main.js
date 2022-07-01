@@ -62,10 +62,41 @@ const person = {
     name : "Tu T. Do"
 };
 
-//ES6 spread operator 
+// ES6 spread operator 
 const new_person = {
     ...person, 
     age: 29
 };
 
 console.log(new_person);
+
+// 5. Rest parameters
+
+const fn = (a, b, ...others) => {
+    // Tham so dai dien cho nhung tham so ko dc khai bao;
+    return others 
+}
+
+console.log(fn(1,2,3,4));
+console.log(fn(1,2,3));
+
+// 6. Class
+
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak(){
+        console.log(`My name is ${this.name}`);
+    }
+}
+
+class Dog extends Animal {
+    speak(){
+        console.log("Go go go!!!");
+    }
+}
+
+dog = new Dog;
+dog.speak();
